@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "dev": "webpack-dev-server",
-    "wat": "webpack -w"
+    "dev": "webpack serve",
+    "wat": "webpack --watch",
+    "start": "npm run dev",
+    "build:dev": "webpack --config ./webpack.development.js",
+    "build:prod": "npm run webpack --env.mode production"
   },
   "repository": {
     "type": "git",
@@ -21,11 +23,16 @@
   "homepage": "https://github.com/zerosheepmoo/hg#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "compression-webpack-plugin": "^6.1.1",
+    "excalibur": "^0.24.5",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^4.5.0",
+    "source-map-loader": "^1.1.2",
     "ts-loader": "^8.0.11",
     "typescript": "^4.0.5",
     "webpack": "^5.4.0",
     "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^5.4.0"
   }
 }

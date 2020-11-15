@@ -6,3 +6,8 @@ export class App {
         alert("Hello!!");
     }
 }
+
+// for debug
+
+// let _window = window as any;
+// _window.App = App
