@@ -52,5 +52,6 @@ module.exports = {
         new HtmlWebPackPlugin({
             title: 'Excalibur Webpack Sample'
         })
-    ]
+    ],
+    
 }
