@@ -1,20 +1,13 @@
-import { Engine } from "excalibur";
-// game.ts
+/*****************************************
+| index.ts                            
+| 2020. 11. 15. created by zerosheepmoo  |
+******************************************/
 
-// Create an instance of the engine.
-// I'm specifying that the game be 800 pixels wide by 600 pixels tall.
-// If no dimensions are specified the game will be fullscreen.
-const game = new Engine({
-  width: 800,
-  height: 600,
-})
-// todo build awesome game here
+import { Manager } from "./Manager"
 
-// Start the engine to begin the game.
-game.start()
+export { Manager };
 
+// for debugs
 
-// for debug
-
-// let _window = window as any;
-// _window.App = App
+let _window = window as any;
+_window.HG = Manager;
